@@ -6,9 +6,13 @@ const App = () => {
   const [render,setRender]=useState([]);
 
   function removeFn(idx){
-    const updatedRender = [...render];
-    updatedRender.splice(idx, 1);
-    setRender(updatedRender);
+    // const updatedRender = [...render];
+    // updatedRender.splice(idx, 1);
+    // setRender(updatedRender);
+    let updatedTodos=render.filter((element,index)=>{
+      return idx!==index;
+    })
+    setRender(updatedTodos)
   }
   function handlingFn(){
     // console.log('clicked');
