@@ -24,8 +24,8 @@ const App = () => {
       <ul>
       {render.map((item, idx) => (
         <div key={idx}>
-          <p>{item}</p>
-          <button onClick={() => removeFn(idx)}>Remove</button>
+          <li>{item} 
+          <button onClick={() => removeFn(idx)}>Remove</button></li>
         </div>
         ))
       }
