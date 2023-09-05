@@ -21,7 +21,7 @@ const App = () => {
       <h1>To-Do-list</h1>
       <input type="text" value={data} onChange={(e)=>setData(e.target.value)}/>
       <button onClick={handlingFn}>Add Todo</button>
-      
+      <ul>
       {render.map((item, idx) => (
         <div key={idx}>
           <p>{item}</p>
@@ -29,6 +29,7 @@ const App = () => {
         </div>
         ))
       }
+      </ul>
        {/* <div>Render state: {JSON.stringify(render)}</div> */}
     </div>
   )
